@@ -1,0 +1,30 @@
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csprojAssemblyReference.cache
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csproj.CoreCompileInputs.cache
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.API.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.API.pdb
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.Contract.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.API.Model.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Common.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Common.Model.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Contract.Base.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Contract.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Model.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.Contract.pdb
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csproj.CopyComplete
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.pdb
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.API.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.API.pdb
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.Contract.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.API.Model.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Common.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Common.Model.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Contract.Base.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Contract.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\Storix.Model.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\bin\Debug\ExtensionSamples.Server.Contract.pdb
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csprojAssemblyReference.cache
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csproj.CoreCompileInputs.cache
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.csproj.CopyComplete
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.API\obj\Debug\ExtensionSamples.Server.API.pdb

@@ -1,0 +1,18 @@
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\ExtensionSamples.Server.Contract.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\ExtensionSamples.Server.Contract.pdb
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\Storix.Contract.Base.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\Storix.Contract.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csprojAssemblyReference.cache
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csproj.CoreCompileInputs.cache
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csproj.CopyComplete
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.dll
+C:\Users\ofers\OneDrive - Vontier\Terpel\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.pdb
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\ExtensionSamples.Server.Contract.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\ExtensionSamples.Server.Contract.pdb
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\Storix.Contract.Base.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\bin\Debug\Storix.Contract.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csprojAssemblyReference.cache
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csproj.CoreCompileInputs.cache
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.csproj.CopyComplete
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.dll
+C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Contract\obj\Debug\ExtensionSamples.Server.Contract.pdb

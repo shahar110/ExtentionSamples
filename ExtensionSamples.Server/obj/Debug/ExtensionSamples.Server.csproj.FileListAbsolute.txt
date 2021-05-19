@@ -1,0 +1,9 @@
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\bin\Debug\ExtensionSamples.Server.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\bin\Debug\ExtensionSamples.Server.pdb
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\bin\Debug\Storix.Common.Model.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\bin\Debug\Storix.Model.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\obj\Debug\ExtensionSamples.Server.csprojAssemblyReference.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\obj\Debug\ExtensionSamples.Server.csproj.CoreCompileInputs.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\obj\Debug\ExtensionSamples.Server.csproj.CopyComplete
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\obj\Debug\ExtensionSamples.Server.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Server\obj\Debug\ExtensionSamples.Server.pdb

@@ -1,0 +1,14 @@
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\ExtendedTab.cs
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\ExtensionSamples.Configuration.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\ExtensionSamples.Configuration.pdb
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\Castle.Core.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\Castle.Facilities.WcfIntegration.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\Castle.Windsor.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\ExtensionSamples.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\Storix.POS.Model.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\bin\Debug\ExtensionSamples.pdb
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\obj\Debug\ExtensionSamples.Configuration.csprojAssemblyReference.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\obj\Debug\ExtensionSamples.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\obj\Debug\ExtensionSamples.Configuration.csproj.CopyComplete
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\obj\Debug\ExtensionSamples.Configuration.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples.Configuration\obj\Debug\ExtensionSamples.Configuration.pdb

@@ -1,0 +1,9 @@
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\bin\Debug\ExtensionSamples.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\bin\Debug\ExtensionSamples.pdb
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\bin\Debug\Storix.POS.Model.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\obj\Debug\ExtensionSamples.csprojAssemblyReference.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\obj\Debug\ExtensionSamples.csproj.CoreCompileInputs.cache
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\obj\Debug\ExtensionSamples.csproj.CopyComplete
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\obj\Debug\ExtensionSamples.dll
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\obj\Debug\ExtensionSamples.pdb
+C:\Users\ofers\source\repos\ExtensionSamples\ExtensionSamples\bin\Debug\ExtendedTab.cs
