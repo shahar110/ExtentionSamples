@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{1BF0BB33-4F43-4CFF-80D7-803863C80DE1}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionSamples.Server.Contract", "ExtensionSamples.Server.Contract\ExtensionSamples.Server.Contract.csproj", "{5D301E7B-9CAE-42BD-955F-4BB3B6F880FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionSamples.Server.API", "ExtensionSamples.Server.API\ExtensionSamples.Server.API.csproj", "{C2EB7D8A-6CDB-4270-8A26-33CEC14B3AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionSamples.Server.DataAccess", "ExtensionSamples.Server.DataAccess\ExtensionSamples.Server.DataAccess.csproj", "{5292FB28-80C0-4E91-A25C-27DEB9D5FA81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{C2EB7D8A-6CDB-4270-8A26-33CEC14B3AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2EB7D8A-6CDB-4270-8A26-33CEC14B3AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2EB7D8A-6CDB-4270-8A26-33CEC14B3AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5292FB28-80C0-4E91-A25C-27DEB9D5FA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5292FB28-80C0-4E91-A25C-27DEB9D5FA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5292FB28-80C0-4E91-A25C-27DEB9D5FA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5292FB28-80C0-4E91-A25C-27DEB9D5FA81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{05E107DD-24F3-4908-BBBA-A7B877AF720F} = {1BF0BB33-4F43-4CFF-80D7-803863C80DE1}
 		{5D301E7B-9CAE-42BD-955F-4BB3B6F880FD} = {1BF0BB33-4F43-4CFF-80D7-803863C80DE1}
 		{C2EB7D8A-6CDB-4270-8A26-33CEC14B3AEC} = {1BF0BB33-4F43-4CFF-80D7-803863C80DE1}
+		{5292FB28-80C0-4E91-A25C-27DEB9D5FA81} = {1BF0BB33-4F43-4CFF-80D7-803863C80DE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B342372-0097-4AA4-8C22-3029E42BD4DB}

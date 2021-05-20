@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Storix_PortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BusinessUnitExtension">
+    <Key>
+      <PropertyRef Name="ID_DB" />
+      <PropertyRef Name="BusinessUnitId" />
+    </Key>
+    <Property Name="ID_DB" Type="int" Nullable="false" />
+    <Property Name="BusinessUnitId" Type="int" Nullable="false" />
+    <Property Name="StationType" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="StationFormat" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="CustomerId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="RecipientId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ChannelId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CashBookId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProfitCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CostCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Storix_PortalModelStoreContainer">
+    <EntitySet Name="BusinessUnitExtension" EntityType="Self.BusinessUnitExtension" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

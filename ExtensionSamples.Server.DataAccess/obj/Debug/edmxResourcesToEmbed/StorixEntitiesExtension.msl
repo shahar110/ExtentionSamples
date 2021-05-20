@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Storix_PortalModelStoreContainer" CdmEntityContainer="Storix_PortalEntities">
+    <EntitySetMapping Name="BusinessUnitExtensions">
+      <EntityTypeMapping TypeName="Storix_PortalModel.BusinessUnitExtension">
+        <MappingFragment StoreEntitySet="BusinessUnitExtension">
+          <ScalarProperty Name="ID_DB" ColumnName="ID_DB" />
+          <ScalarProperty Name="BusinessUnitId" ColumnName="BusinessUnitId" />
+          <ScalarProperty Name="StationType" ColumnName="StationType" />
+          <ScalarProperty Name="StationFormat" ColumnName="StationFormat" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="RecipientId" ColumnName="RecipientId" />
+          <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+          <ScalarProperty Name="CashBookId" ColumnName="CashBookId" />
+          <ScalarProperty Name="ProfitCenterId" ColumnName="ProfitCenterId" />
+          <ScalarProperty Name="CostCenterId" ColumnName="CostCenterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
