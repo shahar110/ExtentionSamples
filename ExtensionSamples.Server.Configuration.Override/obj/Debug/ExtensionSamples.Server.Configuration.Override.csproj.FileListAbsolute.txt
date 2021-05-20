@@ -31,9 +31,6 @@ C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Configuration.O
 C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csproj.CopyComplete
 C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.dll
 C:\gitrepo\SAPExtension\ExtensionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.pdb
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.pdb
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csprojAssemblyReference.cache
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csproj.CoreCompileInputs.cache
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\ExtensionSamples.Server.Configuration.Override.dll
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\ExtensionSamples.Server.Configuration.Override.pdb
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\Castle.Core.dll
@@ -46,5 +43,8 @@ C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\D
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\Storix.Common.Model.dll
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\ExtensionSamples.Server.DataAccess.pdb
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\bin\Debug\ExtensionSamples.Server.DataAccess.dll.config
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csprojAssemblyReference.cache
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csproj.CoreCompileInputs.cache
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.csproj.CopyComplete
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.dll
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.Configuration.Override\obj\Debug\ExtensionSamples.Server.Configuration.Override.pdb

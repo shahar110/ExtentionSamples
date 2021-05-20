@@ -4,6 +4,7 @@
     <EntitySetMapping Name="BusinessUnitExtensions">
       <EntityTypeMapping TypeName="Storix_PortalModel.BusinessUnitExtension">
         <MappingFragment StoreEntitySet="BusinessUnitExtension">
+          <ScalarProperty Name="ID_REC" ColumnName="ID_REC" />
           <ScalarProperty Name="ID_DB" ColumnName="ID_DB" />
           <ScalarProperty Name="BusinessUnitId" ColumnName="BusinessUnitId" />
           <ScalarProperty Name="StationType" ColumnName="StationType" />

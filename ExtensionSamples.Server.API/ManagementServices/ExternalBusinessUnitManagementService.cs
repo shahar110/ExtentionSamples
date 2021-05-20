@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using ExtensionSamples.Server.Contract.Requests;
 using ExtensionSamples.Server.Contract.Responses;
@@ -70,11 +71,62 @@ namespace ExtensionSamples.Server.API.ManagementServices
             {
                 throw new RequestValidationFailedException(nameof(request.ExternalId));
             }
+
+            if (request.StationType.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.StationType));
+            }
+
+            if (request.StationFormat.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.StationFormat));
+            }
+
+            if (request.CustomerId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.CustomerId));
+            }
+
+            if (request.RecipientId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.RecipientId));
+            }
+
+            if (request.ChannelId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.ChannelId));
+            }
+
+            if (request.CashBookId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.CashBookId));
+            }
+
+            if (request.ProfitCenterId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.ProfitCenterId));
+            }
+
+            if (request.CostCenterId.IsEmpty())
+            {
+                throw new RequestValidationFailedException(nameof(request.CostCenterId));
+            }
         }
 
         private BusinessUnitManagementRequest generateCoreBuRequest(ExternalBusinessUnitManagementRequest request)
         {
             var bu = _buRepository.Search(request.ExternalId).FirstOrDefault();
+            var buExtraData = new Dictionary<string, string>()
+            {
+                { "StationType", request.StationType },
+                { "StationFormat", request.StationFormat },
+                { "CustomerId", request.CustomerId },
+                { "RecipientId", request.RecipientId },
+                { "ChannelId", request.ChannelId },
+                { "CashBookId", request.CashBookId },
+                { "ProfitCenterId", request.ProfitCenterId },
+                { "CostCenterId", request.CostCenterId }
+            };
 
             return new BusinessUnitManagementRequest
             {
@@ -99,7 +151,7 @@ namespace ExtensionSamples.Server.API.ManagementServices
                     OpenDate = _timeProvider.Now,
                 },
 
-                ExtraData = request.ExtraData,
+                ExtraData = buExtraData,
                 ActionType = "CreateOrUpdate"
             };
         }

@@ -24,7 +24,6 @@ namespace ExtensionSamples.Server.API.ManagementServices
         private readonly IEntityActionExecuterFactory _entityActionExecuterFactory;
         private readonly IBusinessUnitRepository _buRepository;
         private readonly IDateTimeProvider _timeProvider;
-        private IRemoteNotificationMessage _entityAfter;
         private readonly IEnvironmentContext _environmentContext;
         private IBusinessUnit _internalBu;
         //private RemoteNotificationMessageManagementRequest _coreRemoteNotificationMessage;
@@ -55,7 +54,7 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
             try
             {
-                _entityAfter = entityActionExecuter.Execute(entity);
+                entityActionExecuter.Execute(entity);
             }
             finally
             {

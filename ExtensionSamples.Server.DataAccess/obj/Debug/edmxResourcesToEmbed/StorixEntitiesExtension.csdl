@@ -15,6 +15,7 @@
     <Property Name="CashBookId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProfitCenterId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="CostCenterId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_REC" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityContainer Name="Storix_PortalEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="BusinessUnitExtensions" EntityType="Self.BusinessUnitExtension" />

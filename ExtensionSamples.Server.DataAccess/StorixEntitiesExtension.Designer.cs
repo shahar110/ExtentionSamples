@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\gitrepo\SAPExtension\Server\ExtensionSamples\ExtensionSamples.Server.DataAccess\StorixEntitiesExtension.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\StorixEntitiesExtension.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

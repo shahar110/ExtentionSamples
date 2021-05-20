@@ -4,13 +4,13 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Storix_PortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Storix_PortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BusinessUnitExtension">
           <Key>
             <PropertyRef Name="ID_DB" />
             <PropertyRef Name="BusinessUnitId" />
           </Key>
-          <Property Name="ID_DB" Type="int" Nullable="false" />
+          <Property Name="ID_DB" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="BusinessUnitId" Type="int" Nullable="false" />
           <Property Name="StationType" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="StationFormat" Type="nvarchar" MaxLength="250" Nullable="false" />
@@ -20,12 +20,12 @@
           <Property Name="CashBookId" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="ProfitCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="CostCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ID_REC" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Storix_PortalModelStoreContainer">
           <EntitySet Name="BusinessUnitExtension" EntityType="Self.BusinessUnitExtension" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Storix_PortalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -44,6 +44,7 @@
           <Property Name="CashBookId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProfitCenterId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CostCenterId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID_REC" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Storix_PortalEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BusinessUnitExtensions" EntityType="Self.BusinessUnitExtension" />
@@ -57,6 +58,7 @@
           <EntitySetMapping Name="BusinessUnitExtensions">
             <EntityTypeMapping TypeName="Storix_PortalModel.BusinessUnitExtension">
               <MappingFragment StoreEntitySet="BusinessUnitExtension">
+                <ScalarProperty Name="ID_REC" ColumnName="ID_REC" />
                 <ScalarProperty Name="ID_DB" ColumnName="ID_DB" />
                 <ScalarProperty Name="BusinessUnitId" ColumnName="BusinessUnitId" />
                 <ScalarProperty Name="StationType" ColumnName="StationType" />

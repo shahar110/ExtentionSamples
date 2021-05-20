@@ -24,5 +24,6 @@ namespace ExtensionSamples.Server.DataAccess
         public string CashBookId { get; set; }
         public string ProfitCenterId { get; set; }
         public string CostCenterId { get; set; }
+        public int ID_REC { get; set; }
     }
 }

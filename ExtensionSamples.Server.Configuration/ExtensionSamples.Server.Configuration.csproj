@@ -64,10 +64,6 @@
       <Project>{c2eb7d8a-6cdb-4270-8a26-33cec14b3aec}</Project>
       <Name>ExtensionSamples.Server.API</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ExtensionSamples.Server.DataAccess\ExtensionSamples.Server.DataAccess.csproj">
-      <Project>{5292fb28-80c0-4e91-a25c-27deb9d5fa81}</Project>
-      <Name>ExtensionSamples.Server.DataAccess</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
