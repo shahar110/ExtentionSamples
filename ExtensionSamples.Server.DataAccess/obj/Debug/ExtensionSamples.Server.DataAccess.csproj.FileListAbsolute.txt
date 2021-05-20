@@ -17,13 +17,11 @@ C:\gitrepo\SAPExtension\Server\ExtensionSamples\ExtensionSamples.Server.DataAcce
 C:\gitrepo\SAPExtension\Server\ExtensionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csproj.CopyComplete
 C:\gitrepo\SAPExtension\Server\ExtensionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.dll
 C:\gitrepo\SAPExtension\Server\ExtensionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.pdb
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.pdb
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csprojAssemblyReference.cache
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csproj.CoreCompileInputs.cache
+C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.dll
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\bin\Debug\ExtensionSamples.Server.DataAccess.dll.config
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\bin\Debug\ExtensionSamples.Server.DataAccess.dll
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\bin\Debug\ExtensionSamples.Server.DataAccess.pdb
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\bin\Debug\EntityFramework.xml
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csprojAssemblyReference.cache
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csproj.CoreCompileInputs.cache
 C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.csproj.CopyComplete
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.dll
-C:\gitrepo\ExtentionSamples\ExtensionSamples.Server.DataAccess\obj\Debug\ExtensionSamples.Server.DataAccess.pdb

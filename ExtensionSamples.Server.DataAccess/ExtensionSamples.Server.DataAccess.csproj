@@ -78,7 +78,7 @@
       <DependentUpon>StorixEntitiesExtension.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ExternalBusinessUnitRepository.cs" />
+    <Compile Include="Repositories\ExtensionBusinessUnitRepository.cs" />
     <Compile Include="StorixEntitiesExtension.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
