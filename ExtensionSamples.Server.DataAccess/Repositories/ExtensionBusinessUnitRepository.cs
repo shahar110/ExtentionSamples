@@ -1,14 +1,7 @@
-﻿using Storix.Common.ExtensionMethods;
-using Storix.Contract.Entities;
-using Storix.DataAccess;
-using Storix.DataAccess.Repositories;
-using Storix.Model.Entities;
+﻿using Storix.Model.Entities;
 using Storix.Model.Repositories;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExtensionSamples.Server.DataAccess.Repositories
 {
@@ -119,6 +112,7 @@ namespace ExtensionSamples.Server.DataAccess.Repositories
                 var buExtensionDTO = new BusinessUnitExtension
                 {
                     BusinessUnitId = entity.ID,
+                    ID_DB = entity.OrganizationID,
                     StationType = entity.ExtraData["StationType"],
                     StationFormat = entity.ExtraData["StationFormat"],
                     CustomerId = entity.ExtraData["CustomerId"],
@@ -157,7 +151,7 @@ namespace ExtensionSamples.Server.DataAccess.Repositories
                 buExtensionDTO.CostCenterId = entity.ExtraData["CostCenterId"];
 
                 _context.Entry(buExtensionDTO).State = System.Data.Entity.EntityState.Modified;
-                _context.Entry(buExtensionDTO).Property(x => x.BusinessUnitId).IsModified = false;
+                _context.Entry(buExtensionDTO).Property(x => x.ID_REC).IsModified = false;
             }
 
             return null;

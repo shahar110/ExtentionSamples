@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
 using ExtensionSamples.Server.Contract.Requests;
-using ExtensionSamples.Server.Contract.Responses;
 using Storix.API.Model.ManagementServices;
 using Storix.API.Model.RequestValidation;
 using Storix.Common.ExtensionMethods;
 using Storix.Common.Model.Exceptions;
 using Storix.Contract.Base.Requests;
+using Storix.Contract.Base.Responses;
 using Storix.Contract.Entities;
 using Storix.Contract.Requests.ManagementRequests.EntityManagementRequests;
 using Storix.Model;
@@ -17,16 +17,14 @@ using Storix.Model.ServiceActionExecuters;
 
 namespace ExtensionSamples.Server.API.ManagementServices
 {
-    public class ExternalFuelDeliveryNotificationMessageManagementService : ProcessManagementService<ExternalFuelDeliveryNotificationMessageRequest,
-                                                                            ExternalFuelDeliveryNotificationMessageResponse>
+    public class ExternalFuelDeliveryNotificationMessageManagementService : ProcessManagementService<ExternalFuelDeliveryNotificationMessageRequest, Response>
     {
         private readonly IRequestValidatorFactory _requestValidatorFactory;
         private readonly IEntityActionExecuterFactory _entityActionExecuterFactory;
         private readonly IBusinessUnitRepository _buRepository;
         private readonly IDateTimeProvider _timeProvider;
         private readonly IEnvironmentContext _environmentContext;
-        private IBusinessUnit _internalBu;
-        //private RemoteNotificationMessageManagementRequest _coreRemoteNotificationMessage;
+        private RemoteNotificationMessageManagementRequest _coreRemoteNotificationRequest;
         private const string CoreValidatorCreateService = "RemoteNotificationMessageCreateRequestValidator";
         private const string CoreExecuterCreateService = "RemoteNotificationMessageCreateActionExecuter";
 
@@ -45,10 +43,7 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
         protected override void Execute(RequestHeader header, ExternalFuelDeliveryNotificationMessageRequest request)
         {
-            var coreRemoteNotificationRequest = generateCoreRequest(request, _internalBu);
-            validateCoreRequest(coreRemoteNotificationRequest);
-
-            var entity = coreRemoteNotificationRequest.Entity.MapTo<IRemoteNotificationMessage>();
+            var entity = _coreRemoteNotificationRequest.Entity.MapTo<IRemoteNotificationMessage>();
             entity.FillOrganizationID(_environmentContext.OrganizationId);
             var entityActionExecuter = _entityActionExecuterFactory.Resolve<IRemoteNotificationMessage>(CoreExecuterCreateService);
 
@@ -64,14 +59,17 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
         protected override void ValidateRequest(ExternalFuelDeliveryNotificationMessageRequest request)
         {
-            _internalBu = _buRepository.Search(request.DestinationExternalBusinessUnitId.ToString()).FirstOrDefault();
-            if (_internalBu == null)
+            var internalBu = _buRepository.Search(request.DestinationExternalBusinessUnitId.ToString()).FirstOrDefault();
+            if (internalBu == null)
             {
-                throw new RequestValidationFailedException(nameof(BusinessUnit));
+                throw new RequestValidationFailedException(nameof(ExternalFuelDeliveryNotificationMessageRequest.DestinationExternalBusinessUnitId));
             }
+
+            _coreRemoteNotificationRequest = CreateCoreRequest(request, internalBu.ID);
+            ValidateCoreRequest();
         }
 
-        private RemoteNotificationMessageManagementRequest generateCoreRequest(ExternalFuelDeliveryNotificationMessageRequest request, IBusinessUnit internalBu)
+        private RemoteNotificationMessageManagementRequest CreateCoreRequest(ExternalFuelDeliveryNotificationMessageRequest request, int internalBu)
         {
             return new RemoteNotificationMessageManagementRequest
             {
@@ -79,8 +77,8 @@ namespace ExtensionSamples.Server.API.ManagementServices
                 {
                     RemoteNotificationMessageID = Guid.NewGuid(),
                     FromBusinessUnit = 0,
-                    DisplayArea = "Notification",
-                    DestinationBusinessUnit = internalBu.ID,
+                    DisplayArea = Storix.Common.Model.Constants.DisplayArea.Notification,
+                    DestinationBusinessUnit = internalBu,
                     DestinationTouchPoint = 1,
                     MessageType = string.Empty,
                     Subject = request.MessageSubject.IsEmpty() ? Resources.Resource.FuelDeliveryNotification_DefaultMessageSubject : request.MessageSubject,
@@ -88,17 +86,17 @@ namespace ExtensionSamples.Server.API.ManagementServices
                     IncomingTimeStamp = _timeProvider.Now
                 },
 
-                ActionType = "Create",
+                ActionType = Storix.Contract.Constants.ActionType.Create,
             };
         }
 
-        private void validateCoreRequest(RemoteNotificationMessageManagementRequest request)
+        private void ValidateCoreRequest()
         {
             var validator = _requestValidatorFactory
                     .Resolve<RemoteNotificationMessageManagementRequest>(CoreValidatorCreateService);
             try
             {
-                validator.Validate(request);
+                validator.Validate(_coreRemoteNotificationRequest);
             }
             finally
             {

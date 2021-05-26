@@ -121,6 +121,6 @@
     <value>Se ha emitido una guía de transporte que tiene como destino su EDS, por favor recuerde hacer la validación de documentos antes de iniciar el descargue.</value>
   </data>
   <data name="FuelDeliveryNotification_DefaultMessageSubject" xml:space="preserve">
-    <value />
+    <value>Entrega de combustible en camino</value>
   </data>
 </root>

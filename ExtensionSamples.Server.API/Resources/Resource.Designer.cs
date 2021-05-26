@@ -70,7 +70,7 @@ namespace ExtensionSamples.Server.API.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Entrega de combustible en camino.
         /// </summary>
         internal static string FuelDeliveryNotification_DefaultMessageSubject {
             get {

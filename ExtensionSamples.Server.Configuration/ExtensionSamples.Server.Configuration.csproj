@@ -43,6 +43,7 @@
     <Reference Include="Storix.API.Model">
       <HintPath>..\Libs\Storix.API.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Storix.Common, Version=3.0.0.23, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Storix.Model">
       <HintPath>..\..\..\..\..\..\GitRepo\storix-base\Libs\Storix.Model\Storix.Model.dll</HintPath>
     </Reference>
@@ -63,6 +64,10 @@
     <ProjectReference Include="..\ExtensionSamples.Server.API\ExtensionSamples.Server.API.csproj">
       <Project>{c2eb7d8a-6cdb-4270-8a26-33cec14b3aec}</Project>
       <Name>ExtensionSamples.Server.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExtensionSamples.Server.DataAccess\ExtensionSamples.Server.DataAccess.csproj">
+      <Project>{5292fb28-80c0-4e91-a25c-27deb9d5fa81}</Project>
+      <Name>ExtensionSamples.Server.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

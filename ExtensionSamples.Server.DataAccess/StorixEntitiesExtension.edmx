@@ -10,7 +10,7 @@
             <PropertyRef Name="ID_DB" />
             <PropertyRef Name="BusinessUnitId" />
           </Key>
-          <Property Name="ID_DB" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_DB" Type="int" Nullable="false" />
           <Property Name="BusinessUnitId" Type="int" Nullable="false" />
           <Property Name="StationType" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="StationFormat" Type="nvarchar" MaxLength="250" Nullable="false" />
@@ -20,7 +20,7 @@
           <Property Name="CashBookId" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="ProfitCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="CostCenterId" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="ID_REC" Type="int" Nullable="false" />
+          <Property Name="ID_REC" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Storix_PortalModelStoreContainer">
           <EntitySet Name="BusinessUnitExtension" EntityType="Self.BusinessUnitExtension" Schema="dbo" store:Type="Tables" />

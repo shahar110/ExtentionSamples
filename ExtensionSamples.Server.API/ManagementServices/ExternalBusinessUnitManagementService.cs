@@ -27,6 +27,7 @@ namespace ExtensionSamples.Server.API.ManagementServices
         private readonly IDateTimeProvider _timeProvider;
         private IBusinessUnit _entityAfter;
         private readonly IEnvironmentContext _environmentContext;
+        private BusinessUnitManagementRequest _coreBuRequest;
         private readonly string CoreValidatorCreateOrUpdateService = "BusinessUnitCreateOrUpdateRequestValidator";
         private readonly string CoreExecuterCreateOrUpdateService = "BusinessUnitCreateOrUpdateActionExecuter";
 
@@ -45,12 +46,9 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
         protected override void Execute(RequestHeader header, ExternalBusinessUnitManagementRequest request)
         {
-            var coreBuRequest = generateCoreBuRequest(request);
-            validateCoreBuRequest(coreBuRequest);
-
-            var entity = coreBuRequest.Entity.MapTo<IBusinessUnit>();
-            if (coreBuRequest.ExtraData.IsNotEmpty())
-                entity.ExtraData = coreBuRequest.ExtraData;
+            var entity = _coreBuRequest.Entity.MapTo<IBusinessUnit>();
+            if (_coreBuRequest.ExtraData.IsNotEmpty())
+                entity.ExtraData = _coreBuRequest.ExtraData;
 
             entity.FillOrganizationID(_environmentContext.OrganizationId);
 
@@ -67,53 +65,71 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
         protected override void ValidateRequest(ExternalBusinessUnitManagementRequest request)
         {
-            if (request.ExternalId.IsEmpty())
+            var parentBu = _buRepository.Search(request.ParentId).FirstOrDefault();
+            if (parentBu == null || parentBu.HasNoValue())
             {
-                throw new RequestValidationFailedException(nameof(request.ExternalId));
+                throw new RequestValidationFailedException(nameof(request.ParentId));
             }
 
-            if (request.StationType.IsEmpty())
+            if (parentBu.Level.HasNoValue())
             {
-                throw new RequestValidationFailedException(nameof(request.StationType));
+                throw new RequestValidationFailedException(nameof(parentBu.Level));
             }
 
-            if (request.StationFormat.IsEmpty())
+            var currentBuLevel = parentBu.Level.Value - 1;
+            if (currentBuLevel == 1)
             {
-                throw new RequestValidationFailedException(nameof(request.StationFormat));
+                if (request.ExternalId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.ExternalId));
+                }
+
+                if (request.StationType.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.StationType));
+                }
+
+                if (request.StationFormat.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.StationFormat));
+                }
+
+                if (request.CustomerId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.CustomerId));
+                }
+
+                if (request.RecipientId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.RecipientId));
+                }
+
+                if (request.ChannelId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.ChannelId));
+                }
+
+                if (request.CashBookId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.CashBookId));
+                }
+
+                if (request.ProfitCenterId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.ProfitCenterId));
+                }
+
+                if (request.CostCenterId.IsEmpty())
+                {
+                    throw new RequestValidationFailedException(nameof(request.CostCenterId));
+                }
             }
 
-            if (request.CustomerId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.CustomerId));
-            }
-
-            if (request.RecipientId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.RecipientId));
-            }
-
-            if (request.ChannelId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.ChannelId));
-            }
-
-            if (request.CashBookId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.CashBookId));
-            }
-
-            if (request.ProfitCenterId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.ProfitCenterId));
-            }
-
-            if (request.CostCenterId.IsEmpty())
-            {
-                throw new RequestValidationFailedException(nameof(request.CostCenterId));
-            }
+            _coreBuRequest = CreateCoreBuRequest(request, parentBu);
+            ValidateCoreBuRequest();
         }
 
-        private BusinessUnitManagementRequest generateCoreBuRequest(ExternalBusinessUnitManagementRequest request)
+        private BusinessUnitManagementRequest CreateCoreBuRequest(ExternalBusinessUnitManagementRequest request, IBusinessUnit parentBu)
         {
             var bu = _buRepository.Search(request.ExternalId).FirstOrDefault();
             var buExtraData = new Dictionary<string, string>()
@@ -127,6 +143,8 @@ namespace ExtensionSamples.Server.API.ManagementServices
                 { "ProfitCenterId", request.ProfitCenterId },
                 { "CostCenterId", request.CostCenterId }
             };
+
+            
 
             return new BusinessUnitManagementRequest
             {
@@ -142,8 +160,8 @@ namespace ExtensionSamples.Server.API.ManagementServices
 
                         HierarchyNode = new Storix.Contract.ValueObjects.HierarchyNode
                         {
-                            ParentId = request.ParentId,
-                            Level = request.LevelId
+                            ParentId = Convert.ToUInt64(parentBu.ID),
+                            Level = (parentBu.Level.Value - 1)
                         },
                     },
 
@@ -156,13 +174,13 @@ namespace ExtensionSamples.Server.API.ManagementServices
             };
         }
 
-        private void validateCoreBuRequest(BusinessUnitManagementRequest coreBuRequest)
+        private void ValidateCoreBuRequest()
         {
             var validator = _requestValidatorFactory
                     .Resolve<BusinessUnitManagementRequest>(CoreValidatorCreateOrUpdateService);
             try
             {
-                validator.Validate(coreBuRequest);
+                validator.Validate(_coreBuRequest);
             }
             finally
             {

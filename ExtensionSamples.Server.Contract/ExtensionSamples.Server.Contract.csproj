@@ -51,7 +51,6 @@
     <Compile Include="Requests\ExternalBusinessUnitManagementRequest.cs" />
     <Compile Include="Requests\ExternalFuelDeliveryNotificationMessageRequest.cs" />
     <Compile Include="Responses\ExternalBusinessUnitManagementResponse.cs" />
-    <Compile Include="Responses\ExternalFuelDeliveryNotificationMessageResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,8 +7,7 @@ namespace ExtensionSamples.Server.Contract.Requests
     {
         public string Name { get; set; }
         public string ExternalId { get; set; }
-        public int LevelId { get; set; }
-        public ulong ParentId { get; set; }
+        public string ParentId { get; set; }
         public string Status { get; set; }
         public string StationType { get; set; }
         public string StationFormat { get; set; }

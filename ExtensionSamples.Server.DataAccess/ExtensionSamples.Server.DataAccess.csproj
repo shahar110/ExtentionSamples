@@ -94,6 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StorixEntitiesExtension.edmx</DependentUpon>
     </Compile>
+    <Compile Include="StorixExtensionContextOrgIdBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="StorixEntitiesExtension.edmx">
